@@ -1,7 +1,7 @@
 # Get all the comments of a song on soundcloud in JSON format
 
 *Simple way to get all the comments, with the user's name, of a song (or multiple songs) on Soundcloud in JSON format with just the URL.*
-### Requirements:
+## Requirements:
 - NodeJS , Latest version
 - Puppeteer (npm), " 23.11.0 "
 
@@ -12,6 +12,7 @@
 npm init -y
 ```
 Then you can grab **soundcloudCommentScrapper.js** and put it inside the project.
+
 **Step 1:**
 - You search for a song on soundcloud and copy the URL and paste it in “links” inside **soundcloudCommentScrapper.js**.
 ```js
@@ -33,7 +34,7 @@ node soundcloudCommentScrapper.js
 **Step 3:**
 - Wait for it to finish, the result will be the JSON files with the name “comment-[name of song].JSON”
 
-### Possible errors
+## Possible errors
 - It is possible that not all comments are saved in songs with more than 80 comments, if so just modify the value of the **for**:
 ```js
 (...)
